@@ -278,3 +278,93 @@
       <div class="container">
         <h2 class="titulo-secao">Como funciona no dia a dia</h2>
         <p class="intro-secao">
+          Quatro passos simples integrados na rotina do pescador.
+        </p>
+
+        <div class="lista-passos">
+          <div class="passo">
+            <span class="passo-numero">1</span>
+            <h3 class="passo-titulo">Antes de sair</h3>
+            <p class="passo-texto">
+              O app recebe o mapa utilizando os dados adaquiridos pelas boias e enviados pelos satélites.
+            </p>
+          </div>
+          <div class="passo">
+            <span class="passo-numero">2</span>
+            <h3 class="passo-titulo">No mar</h3>
+            <p class="passo-texto">
+              O pescador pode utilizar o app com internet ou sem conexão com o último mapa baixado.   
+            </p>
+          </div>
+          <div class="passo">
+            <span class="passo-numero">3</span>
+            <h3 class="passo-titulo">Decisão</h3>
+            <p class="passo-texto">
+              LEDs e tela mostram em qual zona pescar e qual espécie esperar.
+            </p>
+          </div>
+          <div class="passo">
+            <span class="passo-numero">4</span>
+            <h3 class="passo-titulo">Retorno</h3>
+            <p class="passo-texto">
+              O pescador registra a captura, alimentando o modelo de IA.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-quiz" id="quiz">
+      <div class="container">
+        <p class="tag">Teste seu conhecimento</p>
+        <h2 class="titulo-secao">Quiz OrbitalFishing</h2>
+        <p class="intro-secao">
+          10 perguntas sobre pesca artesanal, satélites e tecnologia espacial.
+        </p>
+
+        <div class="quiz">
+          <div class="quiz-inicio" id="quizInicio">
+            <button class="botao botao-principal" id="botaoIniciarQuiz">
+              Começar o quiz
+            </button>
+          </div>
+
+          <div class="quiz-pergunta" id="quizPergunta" hidden>
+            <div class="quiz-progresso">
+              Pergunta <span id="perguntaAtualNumero">1</span> de
+              <span id="perguntaTotal">10</span>
+            </div>
+            <h3 class="quiz-texto" id="perguntaTexto">...</h3>
+            <div class="quiz-opcoes" id="perguntaOpcoes"></div>
+          </div>
+
+          <div class="quiz-resultado" id="quizResultado" hidden>
+            <h3 class="quiz-resultado-titulo">Resultado</h3>
+            <p class="quiz-resultado-pontuacao">
+              Você acertou <span id="pontuacaoFinal">0</span> de 10!
+            </p>
+            <p class="quiz-resultado-mensagem" id="mensagemResultado"></p>
+            <button class="botao botao-principal" id="botaoReiniciarQuiz">
+              Tentar novamente
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-formulario" id="contato">
+      <div class="container">
+        <p class="tag">Quer participar?</p>
+        <h2 class="titulo-secao">Faça parte do projeto</h2>
+        <p class="intro-secao">
+          Pescador, cooperativa ou parceiro: deixe seus dados que entraremos em
+          contato.
+        </p>
+
+        <form class="formulario" id="formularioContato" novalidate>
+          <div class="formulario-linha">
+            <label class="formulario-label" for="nome">Nome completo</label>
+            <input
+              class="formulario-campo"
+              type="text"
+              id="nome"
