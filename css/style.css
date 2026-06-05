@@ -238,6 +238,121 @@ h6 {
 }
 
 .banner-imagem img {
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 100%;
+  height: 50dvh;
+  object-fit: cover;
 }
+
+.botao {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 15px;
+  transition: var(--transition);
+  cursor: pointer;
+  text-align: center;
+}
+
+.botao-principal {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.botao-principal:hover {
+  background-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.botao-secundario {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.botao-secundario:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.secao {
+  padding: var(--space-xl) 0;
+}
+
+.secao-cinza {
+  background-color: var(--color-surface);
+}
+
+.titulo-secao {
+  font-family: var(--font-display);
+  font-size: 36px;
+  color: var(--color-text-strong);
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.intro-secao {
+  font-size: 18px;
+  max-width: 700px;
+  margin-bottom: var(--space-lg);
+}
+
+.paragrafo-secao {
+  font-size: 17px;
+  margin-bottom: var(--space-sm);
+  max-width: 700px;
+}
+
+.lista-cartoes {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.cartao {
+  flex: 1;
+  min-width: 260px;
+  padding: var(--space-md);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.cartao:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: var(--color-accent);
+}
+
+.cartao-icone {
+  font-size: 32px;
+  margin-bottom: var(--space-sm);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.cartao-icone-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: invert(40%) sepia(90%) saturate(500%) hue-rotate(185deg) brightness(95%);
+}
+
+.cartao-titulo {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--color-text-strong);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.cartao-texto {
+  font-size: 15px;
+}
+
