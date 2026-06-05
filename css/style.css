@@ -1,0 +1,121 @@
+:root {
+  --color-bg: #ffffff;
+  --color-surface: #f4f6fa;
+  --color-text: #5a6473;
+  --color-text-strong: #1a2332;
+  --color-primary: #0d2847;
+  --color-accent: #1e88e5;
+  --color-border: #e1e5ed;
+
+  --font-display: "Sora", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 32px;
+  --space-lg: 64px;
+  --space-xl: 96px;
+
+  --radius: 12px;
+  --radius-sm: 6px;
+  --transition: all 0.3s ease;
+  --shadow: 0 4px 20px rgba(13, 40, 71, 0.08);
+  --max-width: 1200px;
+}
+
+body.tema-oceano {
+  --color-bg: #f1f8fb;
+  --color-surface: #ffffff;
+  --color-text: #4a6878;
+  --color-text-strong: #0d3b4f;
+  --color-primary: #006a75;
+  --color-accent: #00a8a8;
+  --color-border: #cee0e7;
+  --shadow: 0 4px 20px rgba(0, 106, 117, 0.1);
+}
+
+body.tema-escuro {
+  --color-bg: #0a0f1c;
+  --color-surface: #141b2d;
+  --color-text: #a3b0c2;
+  --color-text-strong: #f0f3f7;
+  --color-primary: #4fc3f7;
+  --color-accent: #29b6f6;
+  --color-border: #1f293f;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: var(--transition);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.cabecalho {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 100;
+  transition: var(--transition);
+}
+
+.cabecalho-area {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-primary);
+}
