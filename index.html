@@ -368,3 +368,80 @@
               class="formulario-campo"
               type="text"
               id="nome"
+              name="nome"
+              required
+              />
+            <span class="formulario-erro" id="erroNome"></span>
+          </div>
+
+          <div class="formulario-linha">
+            <label class="formulario-label" for="email">E-mail</label>
+            <input
+              class="formulario-campo"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+            <span class="formulario-erro" id="erroEmail"></span>
+          </div>
+
+          <div class="formulario-linha">
+            <label class="formulario-label" for="cidade">Cidade ou porto</label>
+            <input
+              class="formulario-campo"
+              type="text"
+              id="cidade"
+              name="cidade"
+              required
+            />
+            <span class="formulario-erro" id="erroCidade"></span>
+          </div>
+
+          <div class="formulario-linha">
+            <label class="formulario-label" for="perfil">Eu sou</label>
+            <select class="formulario-campo" id="perfil" name="perfil" required>
+              <option value="">Selecione...</option>
+              <option value="pescador">Pescador artesanal</option>
+              <option value="cooperativa">Cooperativa de pesca</option>
+              <option value="ong">ONG ambiental</option>
+              <option value="orgao">Órgão público</option>
+              <option value="outro">Outro</option>
+            </select>
+            <span class="formulario-erro" id="erroPerfil"></span>
+          </div>
+
+          <div class="formulario-linha">
+            <label class="formulario-label" for="mensagem"
+              >Mensagem (opcional)</label
+            >
+            <textarea
+              class="formulario-campo"
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="botao botao-principal">
+            Enviar cadastro
+          </button>
+          <p class="formulario-sucesso" id="formularioSucesso" hidden>
+            ✓ Cadastro enviado com sucesso! Entraremos em contato em breve.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <div class="rodape-area">
+        <p class="rodape-marca">OrbitalFishing · FIAP Global Solution 2026</p>
+        <p class="rodape-equipe">
+          <strong>Equipe:</strong>
+          Diego Stoianof (RM570748) · Felipe Mendes (RM570807) · Lucas Custódio (RM571161) · Romulo Sousa (RM570620)
+        </p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
