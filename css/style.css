@@ -718,4 +718,104 @@ h6 {
 .formulario-erro {
   color: #dc3545;
   font-size: 14px;
+  min-height: 16px;
+}
+
+.formulario-sucesso {
+  color: #28a745;
+  font-weight: 600;
+  text-align: center;
+  padding: var(--space-sm);
+  background-color: #d4edda;
+  border-radius: var(--radius-sm);
+}
+
+.rodape {
+  padding: var(--space-md) 0;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.rodape-area {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+  text-align: center;
+}
+
+.rodape-marca {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.rodape-equipe {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+@media (max-width: 900px) {
+  .banner-area {
+    flex-direction: column;
+  }
+
+  .banner-titulo {
+    font-size: 36px;
+  }
+
+  .banner-imagem img {
+    height: 40dvh;
+  }
+
+  .dividido {
+    flex-direction: column;
+  }
+
+  .dividido-imagem img {
+    height: 280px;
+  }
+
+  .menu-lista {
+    gap: var(--space-sm);
+  }
+
+  .menu-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cabecalho-area {
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+
+  .menu {
+    order: 3;
+    width: 100%;
+  }
+
+  .menu-lista {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-sm);
+  }
+
+  .banner-titulo {
+    font-size: 30px;
+  }
+
+  .titulo-secao {
+    font-size: 28px;
+  }
+
+  .slide img {
+    height: 40dvh;
+  }
+
+  .slide-botao {
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+  }
 }
