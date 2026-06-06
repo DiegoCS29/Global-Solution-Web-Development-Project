@@ -356,3 +356,125 @@ h6 {
   font-size: 15px;
 }
 
+.grade-tec {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.cartao-tec {
+  flex: 1;
+  min-width: 240px;
+  padding: var(--space-md);
+  background-color: var(--color-bg);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.cartao-tec:hover {
+  transform: translateY(-2px);
+}
+
+.cartao-tec-titulo {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--color-text-strong);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.cartao-tec-texto {
+  font-size: 15px;
+}
+
+.dividido {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.dividido-texto {
+  flex: 1;
+}
+
+.dividido-imagem {
+  flex: 1;
+}
+
+.dividido-imagem img {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.secao-slideshow {
+  padding: var(--space-md) 0 var(--space-xl);
+}
+
+.slideshow {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.slide {
+  display: none;
+  position: relative;
+}
+
+.slide.ativo {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  height: 55dvh;
+  object-fit: cover;
+}
+
+.slide-legenda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-md);
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.slide-botao {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--color-primary);
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.slide-botao:hover {
+  background-color: #ffffff;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slide-anterior {
+  left: var(--space-sm);
+}
+.slide-proximo {
+  right: var(--space-sm);
+}
