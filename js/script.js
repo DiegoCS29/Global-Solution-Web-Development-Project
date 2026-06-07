@@ -48,3 +48,44 @@ window.addEventListener("scroll", function () {
     }
   });
 });
+
+const slides = document.querySelectorAll(".slide");
+const indicadores = document.querySelectorAll(".indicador");
+const botaoAnterior = document.getElementById("slideAnterior");
+const botaoProximo = document.getElementById("slideProximo");
+
+let slideAtual = 0;
+const totalSlides = slides.length;
+
+function mostrarSlide(n) {
+  slides.forEach(function (slide) {
+    slide.classList.remove("ativo");
+  });
+  indicadores.forEach(function (ind) {
+    ind.classList.remove("ativo");
+  });
+  if (n >= totalSlides) slideAtual = 0;
+  if (n < 0) slideAtual = totalSlides - 1;
+  slides[slideAtual].classList.add("ativo");
+  indicadores[slideAtual].classList.add("ativo");
+}
+
+botaoProximo.addEventListener("click", function () {
+  slideAtual++;
+  mostrarSlide(slideAtual);
+});
+
+botaoAnterior.addEventListener("click", function () {
+  slideAtual--;
+  mostrarSlide(slideAtual);
+});
+indicadores.forEach(function (indicador, indice) {
+  indicador.addEventListener("click", function () {
+    slideAtual = indice;
+    mostrarSlide(slideAtual);
+  });
+});
+setInterval(function () {
+  slideAtual++;
+  mostrarSlide(slideAtual);
+}, 5000);
