@@ -243,3 +243,84 @@ function mostrarResultado() {
   }
   mensagemResultado.textContent = msg;
 }
+
+const formulario = document.getElementById("formularioContato");
+const formularioSucesso = document.getElementById("formularioSucesso");
+
+formulario.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const nome = document.getElementById("nome");
+  const email = document.getElementById("email");
+  const cidade = document.getElementById("cidade");
+  const perfil = document.getElementById("perfil");
+
+  let valido = true;
+
+  limparErros();
+
+  if (nome.value.trim() === "") {
+    mostrarErro(nome, "erroNome", "Por favor, preencha seu nome.");
+    valido = false;
+  } else if (nome.value.trim().length < 3) {
+    mostrarErro(nome, "erroNome", "O nome deve ter pelo menos 3 caracteres.");
+    valido = false;
+  }
+
+  if (email.value.trim() === "") {
+    mostrarErro(email, "erroEmail", "Por favor, preencha seu e-mail.");
+    valido = false;
+  } else if (!validarEmail(email.value)) {
+    mostrarErro(
+      email,
+      "erroEmail",
+      "E-mail inválido. Use o formato: nome@dominio.com",
+    );
+    valido = false;
+  }
+
+  if (cidade.value.trim() === "") {
+    mostrarErro(
+      cidade,
+      "erroCidade",
+      "Por favor, informe sua cidade ou porto.",
+    );
+    valido = false;
+  }
+
+  if (perfil.value === "") {
+    mostrarErro(perfil, "erroPerfil", "Por favor, selecione seu perfil.");
+    valido = false;
+  }
+
+  if (valido) {
+    formularioSucesso.hidden = false;
+    formulario.reset();
+
+    setTimeout(function () {
+      formularioSucesso.hidden = true;
+    }, 4000);
+  }
+});
+
+function mostrarErro(campo, idErro, mensagem) {
+  campo.classList.add("invalido");
+  document.getElementById(idErro).textContent = message;
+}
+
+function limparErros() {
+  const campos = formulario.querySelectorAll(".formulario-campo");
+  campos.forEach(function (c) {
+    c.classList.remove("invalido");
+  });
+
+  const erros = formulario.querySelectorAll(".formulario-erro");
+  erros.forEach(function (e) {
+    e.textContent = "";
+  });
+}
+
+function validarEmail(email) {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
+}
