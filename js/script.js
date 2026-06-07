@@ -25,3 +25,26 @@ botaoTema2.addEventListener("click", function () {
 botaoTema3.addEventListener("click", function () {
   aplicarTema("tema-escuro", this);
 });
+
+const linksMenu = document.querySelectorAll(".menu-link");
+const secoes = document.querySelectorAll("section[id]");
+
+window.addEventListener("scroll", function () {
+  let secaoAtual = "";
+
+  secoes.forEach(function (secao) {
+    const topo = secao.offsetTop - 100;
+    const altura = secao.offsetHeight;
+
+    if (window.scrollY >= topo && window.scrollY < topo + altura) {
+      secaoAtual = secao.getAttribute("id");
+    }
+  });
+
+  linksMenu.forEach(function (link) {
+    link.classList.remove("ativo");
+    if (link.getAttribute("href") === "#" + secaoAtual) {
+      link.classList.add("ativo");
+    }
+  });
+});
