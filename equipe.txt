@@ -1,9 +1,9 @@
-INTEGRANTES:
+Equipe:
 - Diego Candido — 570748
 - Romulo Mendes — 570620
 - Felipe Moreira — 570807
 - Lucas Zezzi — 571161
 
 LINK DO REPOSITÓRIO GITHUB:
-https://github.com/DiegoCS29/Global-Solution-Web-Development-Project
+https://github.com/Orbital-Fishing/Global-Solution-Web-Development-Project
 

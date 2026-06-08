@@ -7,6 +7,7 @@ Utilizamos IA para auxiliar no desenvolvimento dos seguintes componentes do proj
 - **Logo** — criação do SVG
 - **Quiz** — auxílio na estrutura da lógica em JavaScript
 - **Temas** — auxílio na implementação do sistema de 3 temas com variáveis CSS
+- **Imagem da boia sensora** — geração de imagem ilustrativa para o slideshow
 
 A seguir, cada interação detalhada.
 
@@ -78,6 +79,19 @@ Inicialmente a IA sugeriu usar `data-theme` como atributo nos botões para ident
 
 ---
 
+## Interação 4 — Imagem da Boia Sensora (Slideshow)
+
+**O que foi solicitado para a IA:**
+Pedimos à IA que gerasse uma imagem ilustrativa de uma boia sensora oceânica para ser utilizada no slideshow da landing page. O objetivo era ter uma representação visual do hardware do OrbitalFishing — a boia que coleta temperatura, salinidade, pH, clorofila-a e correntes no oceano — já que não tínhamos uma fotografia real disponível.
+
+**O que a IA retornou:**
+A IA gerou uma imagem de uma boia sensora flutuando no oceano, com elementos visuais que remetem a equipamentos de monitoramento marinho, como antenas e sensores. A imagem foi salva como `Boia Sensora.png` e adicionada à pasta `img` do projeto.
+
+**O que foi alterado ou rejeitado e o motivo:**
+A imagem gerada foi utilizada sem alterações estruturais, pois representava adequadamente o conceito de boia sensora oceânica proposto pelo projeto. A legenda do slide foi escrita pela equipe: *"Exemplo de boia sensora para coletar dados oceânicos, imagem criada utilizando IA com prompts."* — deixando explícito ao visitante que se trata de uma imagem gerada por inteligência artificial, não uma fotografia real do equipamento.
+
+---
+
 ## Observação final
 
-Toda decisão final sobre conteúdo, design, cores, texto e código foi tomada pela equipe. A IA foi utilizada como apoio pontual em 3 componentes específicos (logo, estrutura do quiz e estrutura dos temas), não para gerar o projeto inteiro. Cada integrante revisou e testou o código antes da entrega.
+Toda decisão final sobre conteúdo, design, cores, texto e código foi tomada pela equipe. A IA foi utilizada como apoio pontual em 4 componentes específicos (logo, estrutura do quiz, estrutura dos temas e geração de imagem), não para gerar o projeto inteiro. Cada integrante revisou e testou o código antes da entrega.
